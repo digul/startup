@@ -3,13 +3,13 @@ package com.hackerearth.practice;
 import com.hackerearth.practice.exception.PracticeException;
 
 public class DivisibleTester {
-  private final Long MAX_DIGIT = 999999L;
-  private final Long MAX_QUESTION = 999999L;
+  private final long MAX_DIGIT = 999999L;
+  private final long MAX_QUESTION = 999999L;
 
   private String numberFormedStr;
-  private Long questionCnt;
+  private long questionCnt;
 
-  public void setQuestionCnt(Long cnt) throws Exception {
+  public void setQuestionCnt(long cnt) throws Exception {
     if (cnt < 0) {
       throw new PracticeException("## division Number has to over 0");
     }
@@ -20,7 +20,7 @@ public class DivisibleTester {
     this.questionCnt = cnt;
   }
 
-  public Long getQuestionCnt() {
+  public long getQuestionCnt() {
     return this.questionCnt;
   }
 }
